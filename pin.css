@@ -1,0 +1,21 @@
+.height-500{
+    height: 480px;
+}
+.dark-theme{
+    background-color: black;
+}
+.bg-col{
+    background-color: rgb(49, 51, 78);
+}
+.bg-custom{
+    background-color: #131329;
+}
+.bg-custom:hover {
+    cursor: pointer;
+}
+.shadow-inset{
+    box-shadow: inset 0px 0px 11px 9px #070911b8;
+}
+#success, #fail{
+    display: none;
+}

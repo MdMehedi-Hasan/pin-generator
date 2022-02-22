@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pin.css">
+</head>
+<body class = "dark-theme">
+    <section class="container-fluid">
+        <div class="row justify-content-around">
+        <div class="col-md-5">
+        <div class="bg-col text-center mt-5 height-500 rounded">
+            <input id="pin-field" type="text" class="bg-secondary text-white border-0 mt-5 mb-5 w-75 py-2"><br>
+            <button id="pin-btn" class="btn-primary bg-gradient  rounded-circle p-5 border border-primary"> Generate<br> Pin</button>
+        </div>
+        </div>
+        <!-- verify section -->
+        <div class="col-md-5">
+            <div class="bg-col text-center mt-5 height-500 rounded">
+                <input id="submit-field" type="text" class="bg-secondary text-white border-0 mb-2 w-75 mt-5 py-2"><br>
+                <div id="parent" class="row w-75 text-center m-auto gy-5">
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">8</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">7</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">9</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">4</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">5</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">6</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">1</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">2</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">3</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">&lt;</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">0</span> </div>
+                    <div class="col-4"><span class="shadow-inset text-white bg-custom rounded py-3 px-5">C</span> </div>
+                </div>
+                <button id="submit-btn" class="btn-primary border border-primary border-gradient mt-4 px-5 py-2 rounded"> Submit</button>
+            </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div id="success" class="col-12"> <div class="text-center bg-primary text-white w-25 m-auto py-4 mb-3 rounded"> You may enter. Sir!</div></div>
+            <div id="fail" class="col-12"><div class="text-center bg-danger text-white w-25 m-auto py-4 rounded"> Sorry,Wrong pin!</div></div>
+        </div>
+    </section>
+    <script src="pin.js"></script>
+</body>
+</html>
